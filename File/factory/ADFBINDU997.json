@@ -1,0 +1,17 @@
+{
+	"name": "ADFBINDU997",
+	"properties": {
+		"globalParameters": {
+			"rootpath": {
+				"type": "string",
+				"value": "input/raw "
+			}
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f0bd0dd0-b2a3-4ff7-8144-31a55308e64a",
+		"tenantId": "dcb0f523-475a-4a02-bf22-98c703c5917c"
+	}
+}
