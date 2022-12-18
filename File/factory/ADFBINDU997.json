@@ -1,13 +1,5 @@
 {
 	"name": "ADFBINDU997",
-	"properties": {
-		"globalParameters": {
-			"rootpath": {
-				"type": "string",
-				"value": "input/raw "
-			}
-		}
-	},
 	"location": "eastus",
 	"identity": {
 		"type": "SystemAssigned",
