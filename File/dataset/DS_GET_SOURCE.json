@@ -1,0 +1,26 @@
+{
+	"name": "DS_GET_SOURCE",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "mylinkdeservice2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sourcecontainername": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

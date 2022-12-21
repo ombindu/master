@@ -1,0 +1,30 @@
+{
+	"name": "DS_IF_SINK",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "mylinkdeservice2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sinkcontainers": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": {
+					"value": "@dataset().sinkcontainers",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

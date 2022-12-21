@@ -1,0 +1,32 @@
+{
+	"name": "ds_lu_getfoluso",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "mylinkdeservice2",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "metacontainer.txt",
+				"container": "metadata"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "sourcecontainer",
+				"type": "String"
+			},
+			{
+				"name": "targetcontainer",
+				"type": "String"
+			}
+		]
+	}
+}

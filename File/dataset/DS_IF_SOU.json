@@ -1,0 +1,30 @@
+{
+	"name": "DS_IF_SOU",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "mylinkdeservice2",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"sourcecontainers": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"container": {
+					"value": "@dataset().sourcecontainers",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
